@@ -11,6 +11,11 @@ You will need django to be installed in you computer to run this app. Head over 
 
 Once you have downloaded django, go to the cloned repo directory and run the following command
 
+
+virtualenv -p python3.11 env
+source env/bin/activate
+nohup python manage.py runserver 0.0.0.0:8000 &
+  
 ```bash
 $ python manage.py makemigrations
 ```
